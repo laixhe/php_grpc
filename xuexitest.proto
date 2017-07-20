@@ -1,0 +1,27 @@
+syntax = "proto3";	// 指定proto版本
+
+package xuexitest;	// 指定包名
+
+//定义 Xuexitest 服务
+service Xuexitest {
+    //定义 SayTest 方法
+    rpc SayTest(TestRequest) returns (TestReply) {}
+}
+
+//TestRequest 请求结构
+message TestRequest {
+    int64 typeid = 1;
+}
+
+//TestReply 响应结构
+message TestReply {
+    
+	//返回数据类型
+    message GetData {
+		int64 id = 1;
+		string name = 2;
+	}
+
+	//repeated重复(数组)
+	repeated GetData getdataarr = 1;
+}
