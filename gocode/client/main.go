@@ -10,7 +10,7 @@ import (
 
 const (
 	// Address gRPC服务地址
-	Address = "192.168.0.60:50052"
+	Address = "127.0.0.1:50052"
 )
 
 func main() {
