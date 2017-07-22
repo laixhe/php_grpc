@@ -3,7 +3,7 @@
 require __DIR__ . '/vendor/autoload.php';
 
 //用于连接 服务端
-$client = new \Xuexitest\XuexitestClient('192.168.0.60:50052', [
+$client = new \Xuexitest\XuexitestClient('127.0.0.1:50052', [
     'credentials' => Grpc\ChannelCredentials::createInsecure()
 ]);
 
