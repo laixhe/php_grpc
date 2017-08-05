@@ -1,8 +1,8 @@
 {
   "name": "grpc-go-php",
   "require": {
-    "grpc/grpc": "^v1.3.0",
-    "google/protobuf": "^v3.3.0"
+    "grpc/grpc": "^1.4",
+    "google/protobuf": "^3.3"
   },
   "autoload":{
     "psr-4":{
