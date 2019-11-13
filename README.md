@@ -1,8 +1,13 @@
-# gRPC的PHP客户端
 
-## 要安装 php 的 grpc 扩展
-## 要安装 composer 且添加到环境变量中，并在项目里执行 composer install
-## server.exe 是服务端  127.0.0.1:50052
+> 以前的实例请到 v0.1 版本： https://github.com/laixhe/php_grpc/tree/v0.1
 
-### 开源中国：https://my.oschina.net/laixhe/blog/1476644
-### 个人博客：http://www.laixhe.com
+## 让 PHP 搞定 gRPC 不是难事
+> https://gitbook.cn/gitchat/activity/5dc9559d0b93ef713b21928c
+
+#### server 是服务端 127.0.0.1:50052
+#### grpc_php_plugin 是 php 的 grpc 生成插件
+
+#### 相关：
+```
+protoc --php_out=. --grpc_out=. --plugin=protoc-gen-grpc=/xxx/xxx/grpc_php_plugin *.proto
+```

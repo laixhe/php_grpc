@@ -1,0 +1,39 @@
+syntax = "proto3";	// 指定proto版本
+
+package simple;	    // 指定包名
+
+
+// 定义 User 服务
+service User {
+    // 定义 GetUser 方法 - 获取某个 user 数据
+    rpc GetUser(GetUserRequest) returns (GetUserResponse) {}
+    // 定义 GetUserList 方法 - 获取 user 所有数据
+    rpc GetUserList(GetUserListRequest) returns (UserListResponse) {}
+}
+
+// 枚举类型第一个字段必须为 0
+enum UserSex {
+    MEN   = 0;
+    WOMEN = 1;
+}
+
+// GetUser 请求结构
+message GetUserRequest {
+    int64 userid = 1;
+}
+
+// GetUser 响应结构
+message GetUserResponse {
+    int64   userid   = 1;
+    string  username = 2;
+    UserSex sex      = 3;
+}
+
+// GetUserList 请求结构
+message GetUserListRequest {}
+
+// 响应结构
+message UserListResponse {
+	// repeated 重复(数组)
+	repeated GetUserResponse list = 1;
+}

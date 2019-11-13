@@ -1,13 +1,5 @@
 {
-  "name": "grpc-go-php",
   "require": {
-    "grpc/grpc": "^1.4",
-    "google/protobuf": "^3.3"
-  },
-  "autoload":{
-    "psr-4":{
-      "GPBMetadata\\":"GPBMetadata/",
-      "Xuexitest\\":"Xuexitest/"
-    }
+    "grpc/grpc": "^1.25"
   }
 }
