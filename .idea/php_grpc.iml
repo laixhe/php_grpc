@@ -2,8 +2,8 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Simple" isTestSource="false" packagePrefix="Simple\" />
       <sourceFolder url="file://$MODULE_DIR$/GPBMetadata" isTestSource="false" packagePrefix="GPBMetadata\" />
-      <sourceFolder url="file://$MODULE_DIR$/Xuexitest" isTestSource="false" packagePrefix="Xuexitest\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/grpc/grpc" />
     </content>
